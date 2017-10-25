@@ -8,17 +8,35 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#summary">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies">
+            <i class="fa fa-file-video-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#footer">
+            <i class="fa fa-life-ring"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <div class="container">
-      <div class="card text-center">
-        <div class="profile">
+    <div id="content">
+      <div class="container-fluid">
+        <div class="card text-center" id="summary">
           <img src="images/alien.jpg" alt="Pedro Souza" id="img-profile" class="img-circle">
           <h1>Pedro Souza</h1>
           <h2>CEO @ Aliens Inc</h2>
           <p>This the company that will change <em>everything!!!</em></p>
           <a href="https://lewagon.com" class="btn-red">See for yourself</a>
         </div>
-      </div>
 
       <div class="card text-center">
         <ul class="list-inline">
@@ -40,7 +58,7 @@
         </ul>
       </div>
 
-      <div class="card text-center">
+      <div class="card text-center" id="favorite-movies">
         <h2>My Favorite movies</h2>
         <table>
           <tbody>
@@ -81,7 +99,7 @@
         </table>
       </div>
 
-      <div class="card text-center">
+      <div class="card text-center" id="footer">
           <h2>About this page</h2>
             <p>This page has been coded during the <a href="https://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
           <ul class="list-inline">

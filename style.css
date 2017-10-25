@@ -23,10 +23,9 @@ div {
     display: block;
 }
 
-.container {
-  width: 500px;   /* This sets the width */
-  margin: 0 auto; /* This automatically sets left/right margins */
-
+.container-fluid {
+    width: 90%;
+    margin: 30px auto;
 }
 
 .text-center {
@@ -108,6 +107,18 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
+p {
+    text-align: justify;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 ul, menu, dir {
     display: block;
     list-style-type: disc;
@@ -117,6 +128,45 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
+
+  #sidebar {
+    background-color: #384047;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 120px;
+    text-align: center;
+  }
+
+  #sidebar ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  #sidebar li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  #content {
+    margin-left: 120px;
+  }
+
+  #page-content {
+  margin-left: 300px;
+  }
+
+  #sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #788188;
+  }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
